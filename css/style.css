@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -25,6 +26,60 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.HeaderLogo {
+    width: 45px;
+    height: 15px;
+    margin-top: 25px;
+}
+
+.Menu {
+    list-style-type: none;
+}
+
+.Menu li {
+    display: inline-block;
+}
+
+#Hébergements {
+    width: 150px;
+    position: relative;
+}
+
+#Activités {
+    position: relative;
+}
+
+#Hébergements :hover:before {
+    content:"";
+    position: absolute;
+    top: -17px;
+    left: 0;
+    width: 80%;
+    height: 5px;
+    background-color: #0065FC;
+}
+
+#Activités :hover:before {
+    content:"";
+    position: absolute;
+    top: -17px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #0065FC;
+}
+
+#Hébergements:hover,
+#Activités:hover {
+    color: #0065FC;
+}
 a {
     color: inherit;
     text-decoration: none;
