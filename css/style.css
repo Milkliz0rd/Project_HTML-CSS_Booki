@@ -90,6 +90,11 @@ a {
     font-size: 22px;
 }
 
+
+.subtitle {
+    margin-top: 8px;
+}
+
 .card {
     background-color: white;
     border-radius: 20px;
