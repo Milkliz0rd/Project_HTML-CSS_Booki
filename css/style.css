@@ -42,10 +42,7 @@ header {
 
 .Menu {
     list-style-type: none;
-}
-
-.Menu li {           
-    display: inline-block;
+    display: flex;
 }
 
 #Hébergements {
