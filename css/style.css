@@ -28,33 +28,33 @@ body {
 
 header {
     display: flex;  
-    width: 100%;
     height: 100px;
     justify-content: space-between;
 }
 
 
-.HeaderLogo {     /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */  
+.header-logo {     /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */  
     width: 45px;
     height: 15px;
     margin-top: 25px;
 }
 
-.Menu {
+.menu {
     list-style-type: none;
     display: flex;
+   
 }
 
-#Hébergements {
+#accomodation {
     width: 150px;        /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */
     position: relative;
 }
 
-#Activités {
+#activities {
     position: relative;
 }
 
-#Hébergements :hover:before {        /* Barre bleue au dessus d'hébergements */
+#accomodation :hover:before {        /* Barre bleue au dessus d'hébergements */
     content:"";
     position: absolute;
     top: -17px;
@@ -64,7 +64,7 @@ header {
     background-color: #0065FC;
 }
 
-#Activités :hover:before {        /* elle n'était pas marqué mais j'en déduis qu'il y en avait une aussi */
+#activities :hover:before {        /* elle n'était pas marqué mais j'en déduis qu'il y en avait une aussi */
     content:"";
     position: absolute;
     top: -17px;
@@ -74,12 +74,10 @@ header {
     background-color: #0065FC;
 }
 
-#Hébergements:hover,
-#Activités:hover {
+#accomodation:hover,
+#activities:hover {
     color: #0065FC;
 }
-
-
 
 a {
     color: inherit;
@@ -87,11 +85,15 @@ a {
 }
 
 .section-title {
+    display: flex;
+    flex-flow:row wrap ;
     margin: 0;  
     font-size: 22px;
 }
 
 .subtitle {
+    display: flex;
+    flex-flow:row wrap
     margin-top: 8px;
     
 }
@@ -99,11 +101,11 @@ a {
 .zoneForm {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 20px;
+    padding: 0px;
+    padding-top: 10px;
 }
 
-.LogoLocation{
+.logo-location{
     display: flex;
     align-items: center;
     padding: 11px;
@@ -120,7 +122,7 @@ input {
   font-weight: bold;
 }
 
-.Rechercher {
+.search {
     display: flex;
     align-items:center;
     padding: 11px;
@@ -131,10 +133,47 @@ input {
     cursor: pointer;
 }
 
-input::placeholder{  /*Je sais que ce n'est pas exactement pareil mais sinon je dois tranformer mon form en textarea ou utliser du JS mais je n'ai pas le droit pour cette exercice*/
+/*Je sais que ce n'est pas exactement pareil mais sinon je dois tranformer mon form en textarea ou utliser du JS mais je n'ai pas le droit pour cette exercice*/
+input::placeholder{  
     font-weight: bold;
 }
 
+.filters {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    align-items: center;
+}
+
+#money {
+    border: solid rgb(226, 226, 226) 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px;
+}
+
+#family {
+    border: solid rgb(226, 226, 226) 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px;
+}
+
+#romantic {
+    border: solid rgb(226, 226, 226) 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px;
+}
+
+#best {
+    border: solid rgb(226, 226, 226) 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px;
+}
+
+/*J'en suis ici*/
 
 .card {
     background-color: white;

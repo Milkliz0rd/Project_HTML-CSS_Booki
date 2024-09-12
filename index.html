@@ -26,28 +26,29 @@
   <body>
     <div class="main-container">
       <header>
-        <img class="HeaderLogo" src="images/logo/Booki.png" alt="logoBooki" />
-        <ul class="Menu">
-          <li id="Hébergements"><a href="#champ-saisie">Hébergements</a></li>
+        <img class="header-logo" src="images/logo/Booki.png" alt="logoBooki" />
+        <nav>
+        <ul class="menu">
+          <li id="accomodation"><a href="#champ-saisie">Hébergements</a></li>
           <!--ancre vers la barre de recherche-->
 
-          <li id="Activités">
+          <li id="activities">
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t"
-              >Activités</a
-            >
+              >Activités</a>  
+              <!-- Le temps de finir la page et de faire une ancre sur activité :) -->
           </li>
-          <!-- Le temps de finir la page et de faire une ancre sur activité :) -->
+        </nav> 
         </ul>
       </header>
       <main>
-        <section class="Title-forms-filters">
+        <section class="title-forms-filters">
           <h2 class="section-title">
             Trouvez votre hébergement pour des vacances de rêves
           </h2>
           <p class="subtitle">En plein centre-ville ou en pleine nature</p>
 
           <div class="zoneForm">
-            <div class="LogoLocation">
+            <div class="logo-location">
               <i class="fa-solid fa-location-dot" style="color: black"></i>
             </div>
             <form action="" method="get">
@@ -59,9 +60,16 @@
               />
               <!--ancre-->
             </form>
-            <button class="Rechercher"><strong>Rechercher</strong></button>
+            <button class="search"><strong>Rechercher</strong></button>
           </div>
-          <!-- j'en suis à cette partie -->
+          <div class="filters">
+            <h3>Filtres</h3>
+            <span id="money"><i class="fa-solid fa-money-bill-wave"></i><strong> Économique</strong></span>
+            <span id="family"><i class="fa-solid fa-person"></i><strong> Familial</strong></span> 
+            <span id="romantic"><i class="fa-solid fa-heart"></i><strong> Romantique</strong></span>
+            <span id="best"><i class="fa-solid fa-fire"></i><strong> Nos pépites</strong></span>
+            </div>
+            <!-- J'en suis ici -->
         </section>
 
         <div class="hebergements-and-populaires">
