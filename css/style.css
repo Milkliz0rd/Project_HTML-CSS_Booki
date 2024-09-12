@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0px;
+    margin: 0px;     /* Ajout du margin zero comme sur la maquette */
 }
 
 .main-container {
@@ -33,7 +33,7 @@ header {
     justify-content: space-between;
 }
 
-.HeaderLogo {
+.HeaderLogo {      /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */     
     width: 60px;
     height: 20px;
     margin-top: 25px;
@@ -43,12 +43,12 @@ header {
     list-style-type: none;
 }
 
-.Menu li {
+.Menu li {           
     display: inline-block;
 }
 
 #Hébergements {
-    width: 150px;
+    width: 150px;        /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */
     position: relative;
 }
 
@@ -56,7 +56,7 @@ header {
     position: relative;
 }
 
-#Hébergements :hover:before {
+#Hébergements :hover:before {        /* Barre bleue au dessus d'hébergements */
     content:"";
     position: absolute;
     top: -17px;
@@ -66,7 +66,7 @@ header {
     background-color: #0065FC;
 }
 
-#Activités :hover:before {
+#Activités :hover:before {        /* elle n'était pas marqué mais j'en déduis qu'il y en avait une aussi */
     content:"";
     position: absolute;
     top: -17px;
