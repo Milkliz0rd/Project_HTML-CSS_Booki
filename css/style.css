@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0px;
+    margin: 0px;       /* Ajout du margin zero comme sur la maquette */
 }
 
 .main-container {
@@ -33,7 +33,7 @@ header {
     justify-content: space-between;
 }
 
-.HeaderLogo {
+.HeaderLogo {     /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */  
     width: 45px;
     height: 15px;
     margin-top: 25px;
@@ -48,7 +48,7 @@ header {
 }
 
 #Hébergements {
-    width: 150px;
+    width: 150px;        /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */
     position: relative;
 }
 
@@ -56,7 +56,7 @@ header {
     position: relative;
 }
 
-#Hébergements :hover:before {
+#Hébergements :hover:before {    /* Barre bleue au dessus d'hébergements */
     content:"";
     position: absolute;
     top: -17px;
@@ -66,7 +66,7 @@ header {
     background-color: #0065FC;
 }
 
-#Activités :hover:before {
+#Activités :hover:before {        /* elle n'était pas marqué mais j'en déduis qu'il y en avait une aussi */
     content:"";
     position: absolute;
     top: -17px;
@@ -87,12 +87,37 @@ a {
 
 .section-title {
     margin: 0;
+    padding-top: 40px;
     font-size: 22px;
 }
 
 
 .subtitle {
     margin-top: 8px;
+    
+}
+
+.zoneForm {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+
+input {
+  border: solid rgb(206, 206, 206) 1px;
+  padding: 10px;
+  border-right: none;
+  border-left: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius:0 5px 5px 0 ;
+    cursor: pointer;
 }
 
 .card {
