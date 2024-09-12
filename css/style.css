@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0px;       /* Ajout du margin zero comme sur la maquette */
+    margin: 0px;     /* Ajout du margin zero comme sur la maquette */
 }
 
 .main-container {
@@ -27,15 +27,17 @@ body {
 }
 
 header {
-    display: flex;
+    display: flex;  
     width: 100%;
-    flex-flow: row wrap;
+    height: 100px;
     justify-content: space-between;
 }
+
 
 .HeaderLogo {     /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */  
     width: 45px;
     height: 15px;
+
     margin-top: 25px;
 }
 
@@ -43,7 +45,7 @@ header {
     list-style-type: none;
 }
 
-.Menu li {
+.Menu li {           
     display: inline-block;
 }
 
@@ -56,7 +58,7 @@ header {
     position: relative;
 }
 
-#Hébergements :hover:before {    /* Barre bleue au dessus d'hébergements */
+#Hébergements :hover:before {        /* Barre bleue au dessus d'hébergements */
     content:"";
     position: absolute;
     top: -17px;
@@ -93,6 +95,7 @@ a {
     padding-top: 40px;
     font-size: 22px;
 }
+
 
 
 .subtitle {
@@ -138,6 +141,7 @@ input {
 input::placeholder{  /*Je sais que ce n'est pas exactement pareil mais sinon je dois tranformer mon form en textarea ou utliser du JS mais je n'ai pas le droit pour cette exercice*/
     font-weight: bold;
 }
+
 
 .card {
     background-color: white;
