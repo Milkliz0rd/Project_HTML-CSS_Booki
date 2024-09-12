@@ -33,9 +33,11 @@ header {
     justify-content: space-between;
 }
 
-.HeaderLogo {      /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */     
-    width: 60px;
-    height: 20px;
+
+.HeaderLogo {     /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */  
+    width: 45px;
+    height: 15px;
+
     margin-top: 25px;
 }
 
@@ -81,6 +83,8 @@ header {
     color: #0065FC;
 }
 
+
+
 a {
     color: inherit;
     text-decoration: none;
@@ -88,7 +92,54 @@ a {
 
 .section-title {
     margin: 0;
+    padding-top: 40px;
     font-size: 22px;
+}
+
+
+
+.subtitle {
+    margin-top: 8px;
+    
+}
+
+.zoneForm {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.LogoLocation{
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+input {
+  border: solid rgb(226, 226, 226) 1px;
+  padding: 10px;
+  border-right: none;
+  border-left: none;
+  font-weight: bold;
+}
+
+.Rechercher {
+    display: flex;
+    align-items:center;
+    padding: 11px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius:0 10px 10px 0 ;
+    cursor: pointer;
+}
+
+input::placeholder{  /*Je sais que ce n'est pas exactement pareil mais sinon je dois tranformer mon form en textarea ou utliser du JS mais je n'ai pas le droit pour cette exercice*/
+    font-weight: bold;
 }
 
 
@@ -220,5 +271,12 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    button ::before {           /*L'émojie loupe se créé à partir de la taille 768px max de l'écran */
+            content: "🔍";
+            font-size: 12px;
+     }
+
+     button {
+        font-size: 0;  /*Le mot 'Rechercher' disparait*/
+     }
 }
