@@ -86,6 +86,7 @@ a {
 
 .section-title {
     display: flex;
+    align-items: center;
     flex-flow:row wrap ;
     margin: 0;  
     font-size: 22px;
@@ -93,6 +94,7 @@ a {
 
 .subtitle {
     display: flex;
+    align-items: center;
     flex-flow:row wrap
     margin-top: 8px;
     
@@ -142,6 +144,7 @@ input::placeholder{
     display: flex;
     flex-flow: row wrap;
     padding: 20px;
+    padding-left: 0;
     align-items: center;
 }
 
@@ -173,7 +176,22 @@ input::placeholder{
     margin: 8px;
 }
 
-/*J'en suis ici*/
+#money:hover, #family:hover, #romantic:hover, #best:hover {
+    background-color: rgba(205, 218, 250, 0.37)
+}
+
+.info {
+    display: flex;
+    padding: 20px;
+    padding-left: 0;
+    align-items: center;
+}
+
+#logo-info::before {
+    padding: 10px;
+    margin: 8px;
+    border: solid grey 4px;
+}
 
 .card {
     background-color: white;
