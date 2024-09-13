@@ -59,7 +59,7 @@ header {
     position: absolute;
     top: -17px;
     left: 0;
-    width: 80%;
+    width: 113px;
     height: 5px;
     background-color: #0065FC;
 }
@@ -69,7 +69,7 @@ header {
     position: absolute;
     top: -17px;
     left: 0;
-    width: 100%;
+    width: 65px;
     height: 5px;
     background-color: #0065FC;
 }
@@ -143,7 +143,7 @@ input::placeholder{
 .filters {
     display: flex;
     flex-flow: row wrap;
-    padding: 20px;
+    padding-top: 20px;
     padding-left: 0;
     align-items: center;
 }
@@ -177,21 +177,29 @@ input::placeholder{
 }
 
 #money:hover, #family:hover, #romantic:hover, #best:hover {
-    background-color: rgba(205, 218, 250, 0.37)
+    background-color: rgba(205, 218, 250, 0.37);
+    cursor: pointer;
 }
 
 .info {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     padding-left: 0;
     align-items: center;
+    border-radius: 50%;   /*Je sais que c'est en pourcentage mais j'ai vraiment du mal à avoir un cercle parfait en px */
 }
 
-#logo-info::before {
+#logo-info {
+    align-items: center;
+    display: flex;
     padding: 10px;
-    margin: 8px;
-    border: solid grey 4px;
+    margin-right: 10px;
+    border: solid rgb(220, 220, 220) 1px;
+    height: 10px;
+    border-radius: 50%;    /*Je sais que c'est en pourcentage mais j'ai vraiment du mal à avoir un cercle parfait en px */
 }
+
+
 
 .card {
     background-color: white;
