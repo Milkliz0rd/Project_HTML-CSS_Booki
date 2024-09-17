@@ -198,14 +198,9 @@ input::placeholder{
     border-radius: 50%;    /*Je sais que c'est en pourcentage mais j'ai vraiment du mal à avoir un cercle parfait en px */
 }
 
+/*zone Main */
 
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
 
 .hcard {
     background-color: white;
@@ -215,10 +210,6 @@ input::placeholder{
     padding: 5px;
     margin-bottom: 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
-}
-
-.card img {
-    object-fit: cover;
 }
 
 .hcard img {
@@ -304,8 +295,6 @@ input::placeholder{
     box-sizing: border-box;
 }
 
-
-
 .hebergements-card .card-rating {
     margin-top: 10px;
 }
@@ -326,9 +315,20 @@ input::placeholder{
     align-items: center;
 }
 
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+}
+
+.card img {
+    object-fit: cover;
 }
 
 .populaires-cards img {
@@ -360,7 +360,50 @@ input::placeholder{
     margin-bottom: 5px;
 }
 
+/* Activités */
 
+.activities-zone {
+    height: 30%;
+    padding-top: 40px;
+    
+}
+
+.activities-cards {  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.a-card {
+    width: 323px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
+}
+
+.a-card img {
+    object-fit: cover;
+}
+
+.activities-cards img {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activities-cards .card-content-activities {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    align-items: stretch;
+}
+
+.card-title-activities {
+    font-size: 13px;
+    }
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
