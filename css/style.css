@@ -210,10 +210,10 @@ input::placeholder{
 .hcard {
     background-color: white;
     border-radius: 20px ;
-    width: 200px;
-    height: 40% ;
+    width: 235px;
+    height: 190px;
     padding: 5px;
-    margin-top: 10px;
+    margin-bottom: 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
 }
 
@@ -235,7 +235,13 @@ input::placeholder{
 }
 
 .hcard-subtitle {
-    font-size: 12px;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.hcard-rating{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .euro {
@@ -266,15 +272,17 @@ input::placeholder{
 
 .hebergements-title{
     display: flex;
+    margin-bottom: 20px;
     align-items: center;
 }
 
 .hebergements-card {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
-    height: 85%;
-    margin-top: 10px;
+    height: 90%;
+    align-items: center;
 }
 
 .hebergements-card .hcard {
@@ -288,7 +296,7 @@ input::placeholder{
 }
 
 .hebergements-card .card-content-hebergement {
-    width: 67%;
+    width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -302,6 +310,10 @@ input::placeholder{
     margin-top: 10px;
 }
 
+.more {
+    font-weight: bold;
+    font-size: 20px;
+}
 
 /****** Populaires ***********/
 .populaires {
