@@ -34,19 +34,18 @@ header {
 
 
 .header-logo {     /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */  
-    width: 45px;
-    height: 15px;
+    width: 65px;
+    height: 30px;
     margin-top: 25px;
 }
 
 .menu {
     list-style-type: none;
     display: flex;
-   
-}
+   }
 
 #accomodation {
-    width: 150px;        /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */
+    width: 155px;        /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */
     position: relative;
 }
 
@@ -389,7 +388,7 @@ input::placeholder{
 
 .activities-cards img {
     width: 100%;
-    height: 400px;
+    height: 85%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -398,7 +397,6 @@ input::placeholder{
     width: 67%;
     padding-left: 15px;
     display: flex;
-    align-items: stretch;
 }
 
 .card-title-activities {
@@ -460,6 +458,25 @@ footer {
         width: 100%;
     }
 
+    .hebergements-card{
+        display: flex;
+        gap: 20px;
+    }
+
+    .hcard {
+        margin-bottom: 20px;
+        height: 180px;
+        width: 240px;
+    }
+
+    .hcard .card-title {
+        font-size: 14px;
+    }
+
+    .hcard .card-subtitle {
+        font-size: 13px;
+    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -468,7 +485,7 @@ footer {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 30px
     }
 
     .populaires-cards a {
@@ -482,10 +499,83 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activities-cards {
+        height: 277px;
+    }
+
+    .a-card {
+        width: 210px;
+        height: 75%;
+    }
+    
+    .activities-cards img {
+        height: 75%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media all and (max-width: 767.98px) and (min-width:320px) {
+
+    body {
+        width: 100%;
+        min-width: 767.98px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        padding: 0;
+        justify-content: space-around;
+        border-bottom: solid #f2f2f2 5px;
+    }
+
+    #accomodation, #activities {
+        display: flex;
+        margin: auto;
+        font-size: 22px;
+    }
+
+    #accomodation:hover:before {
+    content:"";
+    position: absolute;
+    bottom: -20px;
+    left: -150px;
+    width: 400px;
+    height: 5px;
+    background-color: #0065FC;
+    }
+    
+    #activities:hover:before {
+        content:"";
+        position: absolute;
+        bottom: -20px;
+        left: -168px;
+        width: 378px;
+        height: 5px;
+        background-color: #0065FC;
+    }
+
     button ::before {           /*L'émojie loupe se créé à partir de la taille 768px max de l'écran */
             content: "🔍";
             font-size: 12px;
