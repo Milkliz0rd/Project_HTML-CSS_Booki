@@ -199,41 +199,6 @@ input::placeholder{
 
 /*zone Main */
 
-
-
-.hcard {
-    background-color: white;
-    border-radius: 20px ;
-    width: 235px;
-    height: 190px;
-    padding: 5px;
-    margin-bottom: 0px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
-}
-
-.hcard img {
-    object-fit: cover;
-    width: 100%;
-    height: 50%;
-}
-
-.card-title {
-    font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
-}
-
-.hcard-subtitle {
-    font-size: 15px;
-    margin-top: 0;
-}
-
-.hcard-rating{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .euro {
     font-weight: 700;
 }
@@ -248,16 +213,13 @@ input::placeholder{
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-}
-
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
 }
 
 .hebergements-title{
@@ -265,6 +227,7 @@ input::placeholder{
     margin-bottom: 20px;
     align-items: center;
 }
+
 
 .hebergements-card {
     display: flex;
@@ -275,6 +238,23 @@ input::placeholder{
     align-items: center;
 }
 
+.hcard {
+    background-color: white;
+    border-radius: 20px ;
+    width: 235px;
+    height: 190px;
+    padding: 5px;
+    margin-bottom: 0px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
+}
+
+.card-title {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
 .hebergements-card .hcard {
     display: flex;
     flex-direction: column;
@@ -283,6 +263,13 @@ input::placeholder{
 .hebergements-card img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+
+.hcard img {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
 }
 
 .hebergements-card .card-content-hebergement {
@@ -298,6 +285,16 @@ input::placeholder{
     margin-top: 10px;
 }
 
+.hcard-subtitle {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.hcard-rating{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .more {
     font-weight: bold;
     font-size: 20px;
@@ -306,6 +303,10 @@ input::placeholder{
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .populaires-title {
@@ -316,6 +317,7 @@ input::placeholder{
 
 .card {
     display: flex;
+    width: 100%;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -324,7 +326,7 @@ input::placeholder{
 
 .populaires-cards .card {
     display: flex;
-     margin-top: 33px;
+    margin-top: 33px;
 }
 
 .card img {
@@ -517,10 +519,11 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
-@media all and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
 
     body {
         width: 100%;
+        min-width: 320px;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -597,13 +600,13 @@ footer {
     .populaires {
         width: 100%;
     }
+
     .populaires-title{
         width: 100%;
         box-sizing: border-box;
     }
     
     .populaires-cards {
-        background-color: yellow;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -620,6 +623,7 @@ footer {
 
     .card img {
         width: 33%;
+        object-fit: cover;
         }
 
     .populaires-cards .card-content {
@@ -628,7 +632,11 @@ footer {
         box-sizing: border-box;
     }    
 
-    /*J'en suis ici*/
+    .hebergements {
+        background-color: white;
+    
+    }
+    
     button ::before {           /*L'émojie loupe se créé à partir de la taille 768px max de l'écran */
             content: "🔍";
             font-size: 12px;
