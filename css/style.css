@@ -597,6 +597,7 @@ footer {
 
     .populaires {
         width: 100%;
+        margin: 0;
     }
 
     .populaires-title{
@@ -608,33 +609,25 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 0;
-        margin: 0;
+        gap: 0;
     }
 
-    .card {
-        display: flex;
-        flex-direction: row;
+    #populaires {
         width: 100%;
-        margin:0 0 20px 0;
-        }
-
-    .card img {
-        width: 33%;
-        object-fit: cover;
-        }
-
-    .populaires-cards .card-content {
-        width: 67%;
-        padding-left: 15px;
-        box-sizing: border-box;
-    }    
+    }
 
     .hebergements {
         background-color: white;
-    
     }
-    
+
+    .hebergements-card {
+        width: 100%;
+    }
+
+    #hebergements {
+        width: 100%;
+    }
+
     footer {
         gap: 0;
     }
