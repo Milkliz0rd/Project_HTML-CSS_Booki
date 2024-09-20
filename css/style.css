@@ -35,7 +35,7 @@ header {
 
 .header-logo {     /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */  
     width: 70px;
-    height: 30px;
+    height: 28px;
     margin-top: 25px;
 }
 
@@ -45,15 +45,15 @@ header {
    }
 
 #accomodation {
-    width: 155px;        /* J'imagine qu'il y avait une autre façon de faire mais celle-ci à marché */
-    position: relative;
+    width: 155px;
+    position: relative; /* mise en place de la position relative pour l'ajout du trait en "::before"*/
 }
 
 #activities {
-    position: relative;
+    position: relative; /* mise en place de la position relative pour l'ajout du trait en "::before"*/
 }
 
-#accomodation :hover:before {        /* Barre bleue au dessus d'hébergements */
+#accomodation :hover:before {    /* Barre bleue au dessus d'hébergements */
     content:"";
     position: absolute;
     top: -17px;
@@ -63,12 +63,12 @@ header {
     background-color: #0065FC;
 }
 
-#activities :hover:before {        /* elle n'était pas marqué mais j'en déduis qu'il y en avait une aussi */
+#activities :hover:before {     /* elle n'était pas marqué mais j'en déduis qu'il y en avait une aussi */
     content:"";
     position: absolute;
     top: -17px;
     left: 0;
-    width: 65px;
+    width: 65px;  
     height: 5px;
     background-color: #0065FC;
 }
@@ -133,10 +133,10 @@ input {
     cursor: pointer;
 }
 
-/*Je sais que ce n'est pas exactement pareil mais sinon je dois tranformer mon form en textarea ou utliser du JS mais je n'ai pas le droit pour cette exercice*/
+
 input::placeholder{  
     font-weight: bold;
-}
+} /*Je sais que ce n'est pas exactement pareil mais sinon je dois tranformer mon form en textarea ou utliser du JS mais je n'ai pas le droit pour cette exercice*/
 
 .zone-filters {
     display: flex;
@@ -177,7 +177,7 @@ input::placeholder{
 #money:hover, #family:hover, #romantic:hover, #highlights:hover {
     background-color: rgba(205, 218, 250, 0.37);
     cursor: pointer;
-}
+} /* permet de faire un effet de survol avec une transparence */
 
 .info {
     display: flex;
@@ -199,6 +199,7 @@ input::placeholder{
 
 /*zone Main */
 
+/* j'ai changé la disposition des attributs css pour mieux me repérer quand je travaillais dessus */
 .euro {
     font-weight: 700;
 }
@@ -213,6 +214,8 @@ input::placeholder{
     justify-content: space-between;
 }
 
+/* j'ai décidé d'enlever '.hebergements-and-populaires section{}' et d'ajouter son contenu à chaque section en question. Ça m'a permit par la suite de pouvoir gérer le background de '.hebergement' qui disparait en responsive mobile */
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
@@ -222,27 +225,19 @@ input::placeholder{
     box-sizing: border-box;
 }
 
-.hebergements-title{
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-
 .hebergements-card-zone {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
 }
 
 .hebergements-card {
     background-color: white;
     border-radius: 20px ;
-    width: 235px;
-    height: 200px;
+    width: 235px; /* J'ai décidé de parler en px car je n'ai pas réussi à gérer le % afin d'avoir des vignettes exactement symétrique */
     padding: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
 }
 
@@ -250,11 +245,9 @@ input::placeholder{
     font-size: 16px;
     margin-top: 5px;
     margin-bottom: 5px;
-    
 }
 
 .hebergements-card-zone .hebergements-card {
-    display: flex;
     flex-direction: column;
 }
 
@@ -262,7 +255,6 @@ input::placeholder{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
 
 .hebergements-card img {
     object-fit: cover;
@@ -273,14 +265,7 @@ input::placeholder{
 .hebergements-card-zone .card-content-hebergement {
     width: 100%;
     padding-left: 15px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-.hebergements-card-zone .card-rating {
-    margin-top: 10px;
 }
 
 .hebergement-card-subtitle {
@@ -288,12 +273,9 @@ input::placeholder{
     margin-top: 0;
 }
 
-.hebergement-card-rating{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .more {
+    display: flex;
+    margin-top: 20px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -364,21 +346,19 @@ input::placeholder{
 /* Activités */
 
 .activities-zone {
-    height: 30%;
-    padding-top: 40px;
-    
+    padding-top: 40px; 
 }
 
 .activities-cards-zone {  
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
     padding-top: 20px;
+    justify-content: space-between;
 }
 
 .activities-card {
-    width: 323px;
-    height: 450px;
+    width: 300px; /* J'ai décidé de parler en px car je n'ai pas réussi à gérer le % afin d'avoir des vignettes exactement symétrique */
+    height: 425px;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
@@ -390,15 +370,14 @@ input::placeholder{
 
 .activities-cards-zone img {
     width: 100%;
-    height: 85%;
+    height: 90%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .activities-cards-zone .card-content-activities {
-    width: 67%;
-    padding-left: 15px;
     display: flex;
+    padding-left: 15px;
 }
 
 .card-title-activities {
@@ -413,7 +392,6 @@ footer {
     gap: 150px;
     width: 100%;
     height: 150px;
-    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -460,17 +438,6 @@ footer {
         width: 100%;
     }
 
-    .hebergements-card{
-        display: flex;
-        gap: 20px;
-    }
-
-    .hcard {
-        margin-bottom: 20px;
-        height: 180px;
-        width: 240px;
-    }
-
     .hcard .card-title {
         font-size: 14px;
     }
@@ -487,7 +454,7 @@ footer {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        gap: 30px
+        justify-content: space-between;
     }
 
     .populaires-cards a {
@@ -502,38 +469,28 @@ footer {
         font-size: 13px;
     }
 
-    .activities-cards {
-        height: 277px;
-    }
-
-    .a-card {
-        width: 210px;
-        height: 75%;
+    .activities-card {
+        width: 210px; /* J'ai décidé de parler en px car je n'ai pas réussi à gérer le % afin d'avoir des vignettes exactement symétrique */
+        height: 275px;
     }
     
-    .activities-cards img {
+    .activities-cards-zone img {
         height: 75%;
+    }
+
+    .card-content-activities {
+        width: 80%;
     }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-
-    body {
-        width: 100%;
-        min-width: 320px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
 
     .main-container {
-        width: 100%;
         padding: 0;
     }
 
     header {
-        display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
@@ -544,11 +501,8 @@ footer {
     }
 
     .menu {
-        width: 100%;
         height: 55px;
-        display: flex;
         padding: 0;
-        justify-content: space-around;
     }
 
     #accomodation, #activities {
@@ -573,8 +527,17 @@ footer {
     }
 
     .zoneForm {
-        display: flex;
         justify-content: center;
+    }
+
+    button ::before {           /*L'émojie loupe se créé à partir de la taille 768px max de l'écran */
+        content: "🔍";
+        font-size: 12px;
+    }
+
+    button {
+    font-size: 0;  /*Le mot 'Rechercher' disparait*/
+    box-shadow: 0px 2px 4px black;
     }
 
     .filters {
@@ -590,30 +553,20 @@ footer {
         border: #f2f2f2 solid 3px;
     }
 
+    #logo-money, #logo-family, #logo-romantic, #logo-highlights {
+        margin-right: 8px;
+    }
+
     .hebergements-and-populaires {
-        display: flex;
         flex-direction: column-reverse;
-    }
-
-    .populaires {
-        width: 100%;
-        margin: 0;
-    }
-
-    .populaires-title{
-        width: 100%;
-        box-sizing: border-box;
     }
     
     .populaires-cards {
-        display: flex;
         flex-direction: column;
-        width: 100%;
-        gap: 0;
     }
 
     #populaires {
-        width: 100%;
+        width: 100%; 
     }
 
     .hebergements {
@@ -624,21 +577,37 @@ footer {
         width: 100%;
     }
 
-    #hebergements {
+    #hebergements { 
+        width: 100%; 
+    }
+
+    .activities-title {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .activities-cards-zone {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .activities-card {
+        width: 100%;
+    }
+
+    #activities-card {
         width: 100%;
     }
 
     footer {
         gap: 0;
+        flex-direction: column;
+        width: 90%;
+        height: 400px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
-
-    button ::before {           /*L'émojie loupe se créé à partir de la taille 768px max de l'écran */
-            content: "🔍";
-            font-size: 12px;
-     }
-
-     button {
-        font-size: 0;  /*Le mot 'Rechercher' disparait*/
-        box-shadow: 0px 2px 4px black;
-     }
 }
