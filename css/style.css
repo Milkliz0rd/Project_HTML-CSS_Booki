@@ -547,12 +547,17 @@ footer {
     box-shadow: 0px 2px 4px black;
     }
 
+    .zone-filters {
+        display: inline;
+    }
+
     .filters {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
+
     #money, #family, #romantic, #highlights{
         display: flex;
         justify-content: center;
@@ -568,6 +573,10 @@ footer {
         flex-direction: column-reverse;
     }
     
+    .populaires {
+        margin-top: 0;
+    }
+
     .populaires-cards {
         flex-direction: column;
     }
