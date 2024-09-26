@@ -572,10 +572,6 @@ footer {
         flex-direction: column;
     }
 
-    #populaires {
-        width: 100%; 
-    }
-
     .hebergements {
         background-color: white;
     }
@@ -584,7 +580,7 @@ footer {
         width: 100%;
     }
 
-    #hebergements { 
+    .full-width { 
         width: 100%; 
     }
 
@@ -602,10 +598,6 @@ footer {
     }
 
     .activities-card {
-        width: 100%;
-    }
-
-    #activities-card {
         width: 100%;
     }
 
