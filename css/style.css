@@ -581,8 +581,12 @@ footer {
         flex-direction: column;
     }
 
-    #populaires {
+    .full-width {
         width: 100%; 
+    }
+
+    .populaires-cards a {
+        width: 100%;
     }
 
     .hebergements {
@@ -591,10 +595,6 @@ footer {
 
     .hebergements-card {
         width: 100%;
-    }
-
-    #hebergements { 
-        width: 100%; 
     }
 
     .activities-title {
@@ -611,10 +611,6 @@ footer {
     }
 
     .activities-card {
-        width: 100%;
-    }
-
-    #activities-card {
         width: 100%;
     }
 
