@@ -63,7 +63,7 @@ header {
     background-color: #0065FC;
 }
 
-#activities :hover:before {     /* elle n'était pas marqué mais j'en déduis qu'il y en avait une aussi */
+#activities :hover:before {     
     content:"";
     position: absolute;
     top: -17px;
@@ -617,7 +617,6 @@ footer {
     footer {
         gap: 0;
         flex-direction: column;
-        width: 90%;
         height: 400px;
         margin-bottom: 0;
         margin-left: 0;
