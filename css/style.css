@@ -114,6 +114,11 @@ a {
     border-radius: 10px 0 0 10px;
 }
 
+/* le style css qui était dans le fichier html est ici */
+#logo-location-color{ 
+    color: black;
+}
+
 input {
   border: solid #f2f2f2 1px;
   padding: 10px;
@@ -539,7 +544,7 @@ footer {
 
     button ::before {           /*L'émojie loupe se créé à partir de la taille 768px max de l'écran */
         content: "🔍";
-        font-size: 12px;
+        font-size: 13px;
     }
 
     button {
@@ -575,6 +580,8 @@ footer {
     
     .populaires {
         margin-top: 0;
+        border-radius: 0; 
+        /* changement du border-radius en format mobile */
     }
 
     .populaires-cards {
